@@ -1,0 +1,16 @@
+[features]
+seeds = false
+[programs.localnet]
+perps_demo = "FAXYuthnTA4m7bSivEoxFeNUCMACD5RTxKN99WNUNjAg"
+[programs.devnet]
+perps_demo = "FAXYuthnTA4m7bSivEoxFeNUCMACD5RTxKN99WNUNjAg"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
